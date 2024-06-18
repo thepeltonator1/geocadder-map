@@ -151,6 +151,8 @@ function drawSchoolsPoints() {
         var latitude = element[3];
         var longitude = element[4];
 
+        var website = element[5];
+
         var accountType = element[1];
         var accountTypeSmallLetters = accountType
           .toLowerCase()
@@ -167,6 +169,13 @@ function drawSchoolsPoints() {
           "<div><span class='popup-title'>State: </span><span class='popup-value'>" +
           state +
           "</span></div>";
+
+          popupContent +=
+          "<p class='website-link'><i class='fa fa-external-link' aria-hidden='true'></i> <a target='_blank' href='" +
+          website +
+          "'>" +
+          website +
+          "</a></p>";
 
         popupContent += "</div>";
 
